@@ -35,4 +35,5 @@ header {
     padding: 1rem;
     border: 1px solid black;
     background-color: slategray;
+    justify-content: center;
 }
