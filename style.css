@@ -43,25 +43,3 @@ header {
     background-color: darkslateblue;
     padding: 10px;
 }
-
-.container div {
-    background-color:lightblue;
-    border 1px solid black;
-    padding: 10px;
-    text-align: left;
-}
-
-.container div.header {
-    grid-area: header;
-    font-size: 30px;
-}
-
-.container div.facts {
-    grid-area: header;
-    font-size: 15px;
-}
-
-.container div.content {
-    grid-area: content;
-    font-size: 12px;
-}
