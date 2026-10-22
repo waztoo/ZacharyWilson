@@ -18,10 +18,12 @@
 .container {
     display: grid;
     grid-template-areas:
-    "header"
-    "facts"
-    "content";
-    grid-template-columns: 50vw;
+    "header header"
+    "facts facts"
+    "content content"
+    "content2 picture"
+    "footer footer";
+    grid-template-columns: 50vw 50vw;
     background-color: darkslateblue;
     padding: 10px;
 }
@@ -44,6 +46,20 @@
 
 .container div.content {
     grid-area: content;
+    font-size: 12px;
+}
+
+.container div.content2 {
+    grid-area: content2;
+    font-size: 12px;
+}
+
+.container div.picture {
+    grid-area: picture;
+}
+
+.container div.footer {
+    grid-area: footer;
     font-size: 12px;
 }
 </style>
@@ -89,6 +105,14 @@
 
             <div class="content">
                 Description
+            </div>
+
+            <div class="content2">
+                Some more description
+            </div>
+
+            <div class="picture">
+                <img src="Monogram-1.png">
             </div>
 
         </div>
