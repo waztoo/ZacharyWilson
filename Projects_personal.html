@@ -15,14 +15,56 @@
         justify-content: left;
     }
 
-    .projbox{
-        position:relative;
-        margin: 1rem auto;
-        width: 90vw;
-        padding: 1rem;
-        border: 1px solid black;
-        background-color: slategray;
-    }
+.container {
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "facts facts"
+    "content content"
+    "content2 picture"
+    "footer footer";
+    grid-template-columns: 42vw 42vw;
+    background-color: darkslateblue;
+    padding: 10px;
+}
+.container div {
+    background-color:lightblue;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+}
+
+.container div.header {
+    grid-area: header;
+    font-size: 30px;
+}
+
+.container div.facts {
+    grid-area: facts;
+    font-size: 20px;
+}
+
+.container div.content {
+    grid-area: content;
+    font-size: 15px;
+}
+
+.container div.content2 {
+    grid-area: content2;
+    font-size: 15px;
+}
+
+.container div.picture {
+    grid-area: picture;
+    justify-content: center;
+    place-items: center;
+}
+
+.container div.footer {
+    grid-area: footer;
+    font-size: 12px;
+}
+
 </style>
 
 
@@ -43,7 +85,7 @@
             </a>
 
             <a href="Projects_inst.html" class="box" style="font-size: 20px">
-                Institution Sponsered Projects
+                Institution Sponsored Projects
             </a>
 
             <a href="Projects_personal.html" class="box" style="font-size: 20px">
@@ -53,41 +95,171 @@
          </nav>
     </header>
     <main>
-        <div class="projbox">
-            <div style="justify-content: left; font-size:30px">
-                Dry Ice Cannon
-            </div>
-        </div>
-
-        <div class="projbox">
-            <div style="justify-content: left; font-size:30px">
-                Wooden DM Screen
-            </div>
-        </div>
-
-        <div class="projbox">
-            <div style="justify-content: left; font-size:30px">
-                Websites
-            </div>
-        </div>
-
-        <div class="projbox">
-            <div style="justify-content: left; font-size:30px">
-                Ergonomic 5 Gallon Bucket Handles
-            </div>
-        </div>
-
-        <div class="projbox">
-            <div style="justify-content: left; font-size:30px">
-                Custom Stereo Speaker System
-            </div>
-        </div>
-
-        <div class="projbox">
-            <div style="justify-content: left; font-size:30px">
+    <div class="projbox">
+        <div class="container">
+            
+            <div class="header">
                 Fluid Management System
             </div>
+
+            <div class="facts">
+                Timeline: Mar 2026 - present   Team: Individual
+            </div>
+
+            <div class="content">
+                System to move and sort assorted liquids using a series of pumps.
+            </div>
+
+            <div class="content2">
+                A 3-axis gantry controls a pump to extract and deposit liquids of choice from and into chosen locations, with planned applications being liquid water quality testing and making soft beverages.
+            </div>
+
+            <div class="picture">
+                <img src="Monogram-1.png" style="width:30vw; height:auto; justify-content: center;">
+            </div>
+
         </div>
+    </div>
+
+    <br>
+
+    <div class="projbox">
+        <div class="container">
+            
+            <div class="header">
+                Window Exhaust System
+            </div>
+
+            <div class="facts">
+                Timeline: May 2026 - Present   Team: Individual
+            </div>
+
+            <div class="content">
+                Insert into windows to extract and exhaust indoor fumes from machines.
+            </div>
+
+            <div class="content2">
+                A series of computer fans are controlled using an ESP-32 microcontroller with swappable attachments to connect to 3D printers, laser cutters, and other machines that release fumes.
+            </div>
+
+            <div class="picture">
+                <img src="Monogram-1.png" style="width:30vw; height:auto; justify-content: center;">
+            </div>
+
+        </div>
+    </div>
+
+    <br>
+
+    <div class="projbox">
+        <div class="container">
+            
+            <div class="header">
+                Ergonomic 5-Gallon Bucket Handles
+            </div>
+
+            <div class="facts">
+                Timeline: May - Jun 2026   Team: Individual
+            </div>
+
+            <div class="content">
+                Two-piece handles that can be attached to 5-gallon buckets lacking handles for a more ergonomic grip.
+            </div>
+
+            <div class="content2">
+                As commisioned by Glen Echo Park Aquarium, handles to replace broken or missing originals were made for 5-gallon buckets. Multiple designs were created out of PLA to create a long-lasting, ergonomic, and comforable end product.
+            </div>
+
+            <div class="picture">
+                <img src="Monogram-1.png" style="width:30vw; height:auto; justify-content: center;">
+            </div>
+
+        </div>
+    </div>
+
+    <br>
+
+    <div class="projbox">
+        <div class="container">
+            
+            <div class="header">
+                Wooden DM Screen
+            </div>
+
+            <div class="facts">
+                Timeline: Jan 2025 - May 2026   Team: Individual
+            </div>
+
+            <div class="content">
+                Wooden "dungeon master" screen with numerous features to assist in running physical tabletop roleplaying games.
+            </div>
+
+            <div class="content2">
+                Over 100 laser cut wooden pieces were glued together to create a DM screen with various features, such as inlayed whiteboards and cork sheets, containers for storing accesories and a timer, and two "dice towers" for rolling dice in front or behind the screen.
+            </div>
+
+            <div class="picture">
+                <img src="Monogram-1.png" style="width:30vw; height:auto; justify-content: center;">
+            </div>
+
+        </div>
+    </div>
+
+    <br>
+
+    <div class="projbox">
+        <div class="container">
+            
+            <div class="header">
+                Websites
+            </div>
+
+            <div class="facts">
+                Timeline: Dec 2025 - present   Team: Individual
+            </div>
+
+            <div class="content">
+                Two websites created from scratch in HTML and CSS using neocities and github pages, respectively.
+            </div>
+
+            <div class="content2">
+                Since December of 2025, multiple websites have been developed personally, with one being personal and the other (this one) being professional and represeting projects worked on.
+            </div>
+
+            <div class="picture">
+                <img src="Monogram-1.png" style="width:30vw; height:auto; justify-content: center;">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="projbox">
+        <div class="container">
+            
+            <div class="header">
+                Dry Ice Cannon
+            </div>
+
+            <div class="facts">
+                Timeline: Jan 2025   Team: Two mechanical engineers and one interdisciplinary engineer
+            </div>
+
+            <div class="content">
+                A cannon that uses dry ice mixed with water to build pressure and launch small wooden projectiles.
+            </div>
+
+            <div class="content2">
+                A PVC cannon was created featuring a chamber for inserting water, a chamber for inserting dry ice, a mixing chamber controlled by a ball valve, and a pullstring trigger to fire a wooden proctile. The furthest launch measured ~15m for a wooden dart.
+            </div>
+
+            <div class="picture">
+                <img src="Monogram-1.png" style="width:30vw; height:auto; justify-content: center;">
+            </div>
+
+        </div>
+    </div>
+
+
     </main>
 </body>
 </html>
